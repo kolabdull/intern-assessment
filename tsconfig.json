@@ -5,15 +5,16 @@
     "rootDir": "./src",
     "moduleResolution": "node",
     "typeRoots": ["./node_modules/@types"],
-    "types": ["jest","node"],
+    "types": ["jest", "node"],
     "sourceMap": true,
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,      
+    "strict": true,
     "noImplicitAny": true,
-    "noUnusedLocals": true,                             
-    "skipLibCheck": true
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "exclude": ["src/**/*.spec.ts"],
   "include": ["src/**/*"]
