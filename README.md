@@ -65,3 +65,6 @@ $ npm run test:watch
 <li>Attempt the assessment</li>
 <li>Send a link to your forked repository showing proof of work. Also add screenshots of 100% test case success</li>
 </ol>
+
+<h2>My Result</h2>
+<img src="https://github.com/kolabdull/intern-assessment/blob/main/results/resultimage.png?raw=true" />
