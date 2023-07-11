@@ -6,7 +6,6 @@ describe("Items JSON Parser", () => {
 
   beforeAll(() => {
     input = fs.readFileSync("users.json").toString("utf8");
-    console.log(JSON.parse(input).length);
   });
 
   it("should parse the specified json into a list of items", () => {

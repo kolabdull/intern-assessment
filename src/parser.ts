@@ -27,14 +27,9 @@ export function parse(json: string): User[] {
     });
     parsedUsers.filter;
   }
-  console.log(usersArray.length);
+  // console.log(usersArray.length);
 
   return usersArray;
 
-  // console.log(userss);
-  // Array.isArray(userss);
-  console.log(Array.isArray(parsedUsers));
-
-  // console.log(userList);
   return [];
 }
