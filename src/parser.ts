@@ -1,9 +1,7 @@
 import { User } from "./users";
-import userList from "../users.json";
 
 export function parse(json: string): User[] {
-  const stringifiedUsers = JSON.stringify(userList);
-  const parsedUsers = JSON.parse(stringifiedUsers.toString());
+  const parsedUsers = JSON.parse(json);
   let usersArray: User[] = [];
   if (Array.isArray(parsedUsers)) {
     parsedUsers.forEach((user) => {
@@ -14,22 +12,17 @@ export function parse(json: string): User[] {
         user.phone &&
         user.address.city
       ) {
-        let newUser: User = {
+        const newUser: User = {
           fullname: `${user.firstName} ${user.lastName}`,
           email_address: user.email,
           phone_number: user.phone,
           city: user.address.city,
         };
-        console.log(newUser);
 
         usersArray.push(newUser);
       }
     });
-    parsedUsers.filter;
   }
-  // console.log(usersArray.length);
 
   return usersArray;
-
-  return [];
 }
